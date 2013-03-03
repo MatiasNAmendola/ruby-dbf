@@ -1,0 +1,5 @@
+---
+- spec/dbf/column_spec.rb
+- spec/dbf/file_formats_spec.rb
+- spec/dbf/record_spec.rb
+- spec/dbf/table_spec.rb

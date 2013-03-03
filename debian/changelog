@@ -1,0 +1,5 @@
+ruby-dbf (2.0.3-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #nnnn)
+
+ -- Christopher Baines <cbaines8@gmail.com>  Sun, 03 Mar 2013 10:59:09 +0000
