@@ -3,9 +3,8 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Christopher Baines <cbaines8@gmail.com>
-DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~), ruby-rspec (>= 2.10.0), rake (>= 0.9.2)
+Standards-Version: 3.9.4
 #Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-dbf.git
 #Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-dbf.git;a=summary
 Homepage: http://github.com/infused/dbf
@@ -14,7 +13,11 @@ XS-Ruby-Versions: all
 Package: ruby-dbf
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# fastercsv (~> 1.5.4), rspec (~> 2.11.0, development), rake (~> 0.9.2, development)
-Description: Read xBase files
- A small fast library for reading dBase, xBase, Clipper and FoxPro database files.
+Depends: ${misc:Depends}, ruby | ruby-interpreter, ruby-fastercsv (>= 1.5.4)
+Description: small fast Ruby library for reading database files
+ A small fast library for reading dBase, xBase, Clipper and FoxPro database
+ files.
+ .
+ Some limitations include experimental/no support for advanced data types in
+ dbase V and FoxPro. No support for FoxBase/dBase II files. No write support,
+ and index files are not utilized.
