@@ -1,0 +1,15 @@
+Description: Remove requires rubygems from dbf-rb
+ .
+ ruby-dbf (2.0.3-1) unstable; urgency=low
+ .
+Author: Christopher Baines <cbaines8@gmail.com>
+
+--- ruby-dbf-2.0.3.orig/bin/dbf
++++ ruby-dbf-2.0.3/bin/dbf
+@@ -1,6 +1,5 @@
+ #!/usr/bin/env ruby -s
+ 
+-require 'rubygems'
+ require 'dbf'
+ 
+ $a ||= false
