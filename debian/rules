@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 #
 # Uncomment to ignore all test failures (but the tests will run anyway)
 #export DH_RUBY_IGNORE_TESTS=all
@@ -16,3 +16,7 @@
 
 override_dh_installchangelogs:
 	dh_installchangelogs -O--buildsystem=ruby CHANGELOG.md
+
+override_dh_auto_install:
+	dh_auto_install -O--buildsystem=ruby
+	mv debian/ruby-dbf/usr/bin/dbf debian/ruby-dbf/usr/bin/dbf-rb
