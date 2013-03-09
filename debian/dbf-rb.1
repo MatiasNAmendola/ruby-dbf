@@ -4,7 +4,7 @@
 .\" First parameter, NAME, should be all caps
 .\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
 .\" other parameters are allowed: see man(7), man(1)
-.TH DBF 1 "February 23, 2013"
+.TH DBF-RB 1 "February 23, 2013"
 .\" Please adjust this date whenever revising the manpage.
 .\"
 .\" Some roff macros, for reference:
@@ -18,19 +18,14 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-dbf \- command-line utility for the DBF library
+dbf-rb \- command-line utility for the DBF library
 .SH SYNOPSIS
-.B dbf
+.B dbf-rb
 .RI [-h|-s|-a] " filename"
 .SH DESCRIPTION
-This manual page documents briefly the
-.B dbf
-command.
+DBF is a small fast library for reading dBase, xBase, Clipper and FoxPro database files.
 .PP
-.\" TeX users may be more comfortable with the \fB<whatever>\fP and
-.\" \fI<whatever>\fP escape sequences to invode bold face and italics,
-.\" respectively.
-\fBdbf\fP is a command-line utility for the Ruby DBF library.
+\fBdbf-rb\fP is a command-line utility for the Ruby DBF library.
 .SH OPTIONS
 .TP
 .B \-s
@@ -44,3 +39,10 @@ create a csv file.
 .TP
 .B \-h
 Show summary of options.
+.SH EXAMPLES
+.TP
+.B dbf-rb -a books.dbf > books_schema.rb
+Create an ActiveRecord:Schema from the books database.
+.TP
+.B dbf-rb -c books.dbf > books.csv
+Dump all records in books.dbf in to a CSV file.
