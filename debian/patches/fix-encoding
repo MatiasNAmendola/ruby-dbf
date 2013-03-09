@@ -1,0 +1,15 @@
+Description: Add encoding information
+ .
+ ruby-dbf (2.0.3-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #702161)
+Author: Christopher Baines <cbaines8@gmail.com>
+
+--- ruby-dbf-2.0.3.orig/spec/dbf/record_spec.rb
++++ ruby-dbf-2.0.3/spec/dbf/record_spec.rb
+@@ -1,3 +1,5 @@
++Encoding.default_external='UTF-8' if defined? Encoding
++
+ require "spec_helper"
+ 
+ describe DBF::Record do
