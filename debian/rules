@@ -20,3 +20,4 @@ override_dh_installchangelogs:
 override_dh_auto_install:
 	dh_auto_install -O--buildsystem=ruby
 	mv debian/ruby-dbf/usr/bin/dbf debian/ruby-dbf/usr/bin/dbf-rb
+	sed -i '1s/$/ -s/' debian/ruby-dbf/usr/bin/dbf-rb
