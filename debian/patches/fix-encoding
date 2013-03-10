@@ -1,9 +1,6 @@
 Description: Add encoding information
- .
- ruby-dbf (2.0.3-1) unstable; urgency=low
- .
-   * Initial release (Closes: #702161)
 Author: Christopher Baines <cbaines8@gmail.com>
+Last-Update: 2013-03-10
 
 --- ruby-dbf-2.0.3.orig/spec/dbf/record_spec.rb
 +++ ruby-dbf-2.0.3/spec/dbf/record_spec.rb
