@@ -1,6 +1,7 @@
 Description: Prevent modification of $
 Author: Christopher Baines <cbaines8@gmail.com>
 Last-Update: 2013-03-10
+Bug: https://github.com/infused/dbf/pull/52
 
 --- ruby-dbf-2.0.3.orig/spec/spec_helper.rb
 +++ ruby-dbf-2.0.3/spec/spec_helper.rb
