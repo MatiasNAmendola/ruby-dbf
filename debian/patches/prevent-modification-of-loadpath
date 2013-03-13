@@ -1,4 +1,4 @@
-Description: Prevent modification of $
+Description: Prevent modification of $: ($LOAD_PATH)
 Author: Christopher Baines <cbaines8@gmail.com>
 Last-Update: 2013-03-10
 Bug: https://github.com/infused/dbf/pull/52
