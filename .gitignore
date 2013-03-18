@@ -1,0 +1,4 @@
+debian/files
+debian/ruby-dbf.debhelper.log
+debian/ruby-dbf.substvars
+debian/ruby-dbf
