@@ -13,8 +13,7 @@ XS-Ruby-Versions: all
 Package: ruby-dbf
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${misc:Depends}, ruby | ruby-interpreter
-Recommends: ruby-fastercsv (>= 1.5.4)
+Depends: ${misc:Depends}, ruby | ruby-interpreter, ruby-fastercsv (>= 1.5.4)
 Description: small fast Ruby library for reading database files
  A small fast library for reading dBase, xBase, Clipper and FoxPro database
  files.
